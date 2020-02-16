@@ -2,7 +2,9 @@ import cv2 as cv
 import numpy as np 
 
 src_img = cv.imread('android.png')
-src_img = cv.resize(src_img, (960,540))
+
+#If the image is too big to view in cv.imshow() uncomment below line
+#src_img = cv.resize(src_img, (960,540))
 
 gray_img = cv.cvtColor(src_img, cv.COLOR_BGR2GRAY)
 
